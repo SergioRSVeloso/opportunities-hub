@@ -41,7 +41,10 @@ FORMATS = ["In person", "Online", "Hybrid"]
 
 TODAY = dt.date.today()
 NOW = dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
-UA = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36 OpportunitiesHub/2.0"
+UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+import http.cookiejar
+_JAR = http.cookiejar.CookieJar()
+_OPENER = urllib.request.build_opener(urllib.request.HTTPCookieProcessor(_JAR))
 FIXTURES = None
 
 
@@ -72,14 +75,16 @@ def fetch(url, data=None, headers=None, timeout=25):
         if os.path.exists(p):
             return open(p, encoding="utf-8").read()
         raise urllib.error.URLError("no fixture for " + url)
-    h = {"User-Agent": UA, "Accept": "text/html,application/xhtml+xml,application/xml,application/rss+xml;q=0.9,*/*;q=0.8",
-         "Accept-Language": "en-GB,en;q=0.9", "Accept-Encoding": "gzip, deflate"}
+    h = {"User-Agent": UA, "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,application/rss+xml,*/*;q=0.8",
+         "Accept-Language": "en-GB,en;q=0.9", "Accept-Encoding": "gzip, deflate", "Upgrade-Insecure-Requests": "1",
+         "Sec-Fetch-Dest": "document", "Sec-Fetch-Mode": "navigate", "Sec-Fetch-Site": "none", "Sec-Fetch-User": "?1",
+         "Cache-Control": "no-cache"}
     h.update(headers or {})
     last = None
     for attempt in range(2):
         try:
             req = urllib.request.Request(url, data=data, headers=h)
-            with urllib.request.urlopen(req, timeout=timeout) as r:
+            with _OPENER.open(req, timeout=timeout) as r:
                 raw = r.read(4_000_000)
                 enc = (r.headers.get("Content-Encoding") or "").lower()
                 if enc == "gzip":
@@ -187,7 +192,36 @@ DATE_PATTERNS = [
     (re.compile(r"\b(\d{1,2})(?:st|nd|rd|th)?\s*(?:of\s+)?" + MON + r"\.?,?\s+(20\d\d)\b", re.I), "dmy"),
     (re.compile(r"\b" + MON + r"\.?\s+(\d{1,2})(?:st|nd|rd|th)?,?\s+(20\d\d)\b", re.I), "mdy"),
     (re.compile(r"\b(\d{1,2})[./](\d{1,2})[./](20\d\d)\b"), "dmy_num"),
+    (re.compile(r"(20\d\d)\s*年\s*(\d{1,2})\s*月\s*(\d{1,2})\s*日"), "ymd"),
+    (re.compile(r"\b(20\d\d)[./](\d{1,2})[./](\d{1,2})\b"), "ymd"),
 ]
+YEARLESS = [(re.compile(r"\b(\d{1,2})(?:st|nd|rd|th)?\s+" + MON + r"\b(?!\.?,?\s+20\d\d)", re.I), "dm"),
+            (re.compile(r"\b" + MON + r"\.?\s+(\d{1,2})(?:st|nd|rd|th)?\b(?!,?\s+20\d\d)", re.I), "md"),
+            (re.compile(r"(?<!\d)(\d{1,2})\s*月\s*(\d{1,2})\s*日"), "cn")]
+
+
+def yearless_dates(s):
+    """Dates written without a year (common on event pages): assume the next occurrence."""
+    out = []
+    for rx, kind in YEARLESS:
+        for m in rx.finditer(s):
+            g = m.groups()
+            try:
+                if kind == "dm":
+                    mo, d = MONTHS[g[1][:3].lower()], int(g[0])
+                elif kind == "md":
+                    mo, d = MONTHS[g[0][:3].lower()], int(g[1])
+                else:
+                    mo, d = int(g[0]), int(g[1])
+            except (KeyError, ValueError):
+                continue
+            x = mk(TODAY.year, mo, d)
+            if x and x < TODAY - dt.timedelta(days=2):
+                x = mk(TODAY.year + 1, mo, d)
+            if x:
+                out.append((m.start(), x))
+    out.sort()
+    return out
 
 
 def mk(y, m, d):
@@ -254,6 +288,9 @@ def event_date_from_text(t):
         if ds:
             return ds[0].isoformat()
     ds = [d for _, d in find_dates(head) if TODAY <= d <= TODAY + dt.timedelta(days=400)]
+    if ds:
+        return ds[0].isoformat()
+    ds = [d for _, d in yearless_dates(head[:1200]) if d <= TODAY + dt.timedelta(days=200)]
     return ds[0].isoformat() if ds else None
 
 
@@ -268,6 +305,13 @@ _RAW = {
     "Russia & Central Asia": ["russian federation", "saint petersburg", "st petersburg"],
     "Americas": ["united states", "costa rica", "el salvador", "dominican republic", "new york", "los angeles", "san francisco", "new haven", "mexico city", "sao paulo", "são paulo", "rio de janeiro", "buenos aires"],
 }
+_RAW["Sub-Saharan Africa"] += ["sahel", "horn of africa", "west africa", "east africa", "southern africa", "central africa", "great lakes region", "sub-saharan"]
+_RAW["Middle East & North Africa"] += ["middle east", "persian gulf", "gulf states", "maghreb", "levant", "mena", "north africa"]
+_RAW["Europe"] += ["balkans", "western balkans", "baltic", "nordic", "eastern europe"]
+_RAW["Russia & Central Asia"] += ["central asia", "south caucasus", "caucasus", "eurasia"]
+_RAW["Americas"] += ["latin america", "caribbean", "south america", "central america", "north america"]
+_RAW["South & Southeast Asia"] += ["south asia", "southeast asia", "south-east asia", "asean", "indo-pacific", "pacific islands"]
+_RAW["China & East Asia"] += ["east asia", "korean peninsula", "taiwan strait"]
 _SINGLE = {
     "Europe": "albania andorra austria belgium bosnia bulgaria croatia cyprus czechia denmark estonia finland france germany greece hungary iceland ireland italy kosovo latvia liechtenstein lithuania luxembourg malta moldova monaco montenegro netherlands norway poland portugal romania serbia slovakia slovenia spain sweden switzerland ukraine england scotland wales uk belarus brussels london paris berlin geneva vienna rome madrid lisbon amsterdam stockholm oslo copenhagen helsinki warsaw prague budapest athens dublin florence fiesole oxford cambridge edinburgh barcelona milan munich hamburg frankfurt leiden utrecht ghent leuven bruges strasbourg lyon bologna zurich bern lausanne krakow vilnius riga tallinn bucharest sofia zagreb ljubljana belgrade kyiv kiev porto coimbra maastricht groningen nijmegen tilburg rotterdam antwerp konstanz bremen mannheim heidelberg göttingen gottingen sciences-po",
     "China & East Asia": "china prc macau macao taiwan japan korea mongolia beijing shanghai guangzhou shenzhen hangzhou nanjing wuhan xiamen chengdu tianjin tokyo kyoto osaka seoul taipei ulaanbaatar tsinghua fudan",
@@ -417,24 +461,76 @@ def format_of(location, text, ld_mode=""):
 
 
 # =========================================================== source adapters
+def _anchor_links(doc, base):
+    for m in re.finditer(r'(?is)<a\b[^>]*?href=["\']([^"\'#]+)["\'][^>]*>(.*?)</a>', doc):
+        href = urllib.parse.urljoin(base, html.unescape(m.group(1)).strip())
+        yield href, clean(m.group(2), 300), clean(doc[m.end(): m.end() + 900], 500)
+
+
+SKIP_PATH = re.compile(r"/(page|tag|tags|category|categories|author|topics?|search|feed|login|wp-content|wp-json)(/|$)|[?&](page|p)=|\.(pdf|jpg|png|docx?)$", re.I)
+
+
+def _auto_links(doc, base):
+    """No pattern match: take same-site links one level below the listing page."""
+    bu = urllib.parse.urlparse(base)
+    root = bu.path.rstrip("/")
+    seen, out = set(), []
+    for href, text, ctx in _anchor_links(doc, base):
+        u = urllib.parse.urlparse(href)
+        if u.netloc != bu.netloc or SKIP_PATH.search(href) or href in seen:
+            continue
+        path = u.path.rstrip("/")
+        if root and not path.startswith(root + "/"):
+            continue
+        last = path.rsplit("/", 1)[-1]
+        if len(last) < 10 or "-" not in last or len(text) < 12:
+            continue
+        seen.add(href)
+        out.append({"url": href, "title": text, "snippet": ctx})
+    return out
+
+
+def _feed_url(doc, base):
+    m = re.search(r'(?is)<link[^>]+type=["\']application/(?:rss|atom)\+xml["\'][^>]*href=["\']([^"\']+)', doc) or \
+        re.search(r'(?is)<link[^>]+href=["\']([^"\']+)["\'][^>]*type=["\']application/(?:rss|atom)\+xml', doc)
+    return urllib.parse.urljoin(base, html.unescape(m.group(1))) if m else None
+
+
 def adapt_links(src):
     out, seen = [], set()
-    pat = re.compile(src["pattern"])
+    pat = re.compile(src["pattern"]) if src.get("pattern") else None
     urls = src.get("urls") or [src["url"]]
+    docs = []
     for u in urls:
         doc = fetch(u)
-        for m in re.finditer(r'(?is)<a\b[^>]*?href=["\']([^"\'#]+)["\'][^>]*>(.*?)</a>', doc):
-            href = urllib.parse.urljoin(u, html.unescape(m.group(1)).strip())
+        docs.append((u, doc))
+        if not pat:
+            continue
+        for href, text, ctx in _anchor_links(doc, u):
             if not pat.search(href) or href in seen:
                 continue
-            text = clean(m.group(2), 300)
             if len(text) < 6 or RX(r"^(read more|more|details|register|apply|view|learn more|›|»)$").match(text):
                 text = ""
             seen.add(href)
-            # a little context after the link often holds deadline / location
-            ctx = clean(doc[m.end(): m.end() + 900], 500)
             out.append({"url": href, "title": text, "snippet": ctx})
-    # merge duplicates with/without title
+    if not out:
+        # fallback 1: the site's own RSS/Atom feed; fallback 2: links below the listing page
+        for u, doc in docs:
+            f = _feed_url(doc, u)
+            if f:
+                try:
+                    host = urllib.parse.urlparse(u).netloc
+                    out = [c for c in adapt_rss({"url": f}) if urllib.parse.urlparse(c["url"]).netloc == host]
+                    if out:
+                        src["_note"] = "read via the site's feed"
+                        break
+                except Exception:
+                    pass
+        if not out:
+            for u, doc in docs:
+                out += _auto_links(doc, u)
+            if out:
+                src["_note"] = "pattern did not match; used nearby links"
     best = {}
     for c in out:
         b = best.get(c["url"])
@@ -814,6 +910,21 @@ def load_manual():
 
 
 # =========================================================== main
+def src_note(r):
+    if r["note"] and not r["note"].startswith(("read via", "pattern did")):
+        return r["note"]
+    if not r["listed"]:
+        return "page read, but no items recognised"
+    bits = [f"{r['listed']} listed"]
+    if r["dup"]:
+        bits.append(f"{r['dup']} already found via another source")
+    if r["dropped"]:
+        bits.append(f"{r['dropped']} skipped (closed, no date, or outside the field)")
+    if r["note"]:
+        bits.append(r["note"])
+    return " · ".join(bits) if (r["dup"] or r["dropped"] or r["note"]) else ""
+
+
 def main():
     global FIXTURES
     args = sys.argv[1:]
@@ -842,7 +953,7 @@ def main():
         with ThreadPoolExecutor(max_workers=8) as ex:
             for src, cands, err in ex.map(run_src, sources):
                 log(f"-> {src['name']}: {len(cands)} listed{(' · ' + err) if err else ''}")
-                rep = {"name": src["name"], "listed": len(cands), "found": 0, "note": err}
+                rep = {"name": src["name"], "listed": len(cands), "found": 0, "note": err or src.get("_note", ""), "dup": 0, "dropped": 0}
                 report.append(rep)
                 if cands:
                     ok_sources.add(src["name"])
@@ -866,6 +977,8 @@ def main():
             if u not in seen:
                 seen.add(u)
                 uniq.append(w)
+            else:
+                w[2]["dup"] += 1
         uniq = uniq[:max_detail]
         log(f"Opening {len(uniq)} new or changed pages…")
         # 2) open official pages
@@ -880,6 +993,8 @@ def main():
             if it:
                 found.append(it)
                 rep["found"] += 1
+            else:
+                rep["dropped"] += 1
 
     merged, added, updated = merge(existing, found)
     merged, pruned = prune(merged, ok_sources)
@@ -897,7 +1012,7 @@ def main():
     if not manual_only:
         meta_d.update({"lastRefreshed": NOW, "method": ai.note,
                        "summary": f"{added} added, {updated} updated, {pruned} closed or delisted removed; {len(merged)} open",
-                       "sources": [{"name": r["name"], "found": r["found"], "note": r["note"] or ("" if r["listed"] else "nothing listed")} for r in report]})
+                       "sources": [{"name": r["name"], "found": r["found"], "note": src_note(r)} for r in report]})
     save(META_F, meta_d, indent=1)
     log(meta_d.get("summary", f"{len(merged)} items"))
 
