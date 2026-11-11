@@ -1,7 +1,7 @@
 {
- "lastRefreshed": "2026-11-11T20:57:29Z",
- "summary": "225 added, 0 updated, 0 closed or delisted removed; 400 open",
- "total": 400,
+ "lastRefreshed": "2026-11-11T21:43:12Z",
+ "summary": "19 added, 0 updated, 0 closed or delisted removed; 419 open",
+ "total": 419,
  "sources": [
   {
    "name": "jobs.ac.uk – Politics & Government",
@@ -25,53 +25,33 @@
   },
   {
    "name": "EURAXESS – political science",
-   "found": 0,
+   "found": 10,
    "note": ""
   },
   {
    "name": "EURAXESS – security & conflict",
-   "found": 0,
+   "found": 10,
    "note": ""
   },
   {
    "name": "EURAXESS – Middle East & Islamic studies",
-   "found": 0,
+   "found": 10,
    "note": ""
   },
   {
    "name": "EURAXESS – China & Asia",
-   "found": 0,
+   "found": 10,
    "note": ""
   },
   {
    "name": "EURAXESS – migration",
-   "found": 0,
+   "found": 10,
    "note": ""
   },
   {
    "name": "EURAXESS – MSCA doctoral networks (social sciences)",
-   "found": 0,
+   "found": 10,
    "note": ""
-  },
-  {
-   "name": "FindAPhD – politics & international relations (worldwide)",
-   "found": 0,
-   "note": "HTTP Error 403: Forbidden"
-  },
-  {
-   "name": "FindAPhD – international relations",
-   "found": 0,
-   "note": "HTTP Error 403: Forbidden"
-  },
-  {
-   "name": "UNjobs – political affairs",
-   "found": 0,
-   "note": "nothing listed"
-  },
-  {
-   "name": "UNjobs – peace & security",
-   "found": 0,
-   "note": "nothing listed"
   },
   {
    "name": "UNjobs – human rights",
@@ -81,7 +61,7 @@
   {
    "name": "UNjobs – internships",
    "found": 8,
-   "note": ""
+   "note": "9 listed · 1 skipped (closed, no date, or outside the field)"
   },
   {
    "name": "ReliefWeb – political affairs, peace & governance jobs",
@@ -91,27 +71,17 @@
   {
    "name": "Opportunity Desk (worldwide scholarships, fellowships, conferences)",
    "found": 18,
-   "note": ""
+   "note": "30 listed · 12 skipped (closed, no date, or outside the field)"
   },
   {
    "name": "Scholars4Dev (scholarships for international students)",
    "found": 16,
-   "note": ""
-  },
-  {
-   "name": "Scholarship Positions (worldwide)",
-   "found": 0,
-   "note": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'cloudflare.vc'. (_ssl.c:1011)>"
+   "note": "20 listed · 4 skipped (closed, no date, or outside the field)"
   },
   {
    "name": "Opportunities for Africans",
    "found": 14,
-   "note": ""
-  },
-  {
-   "name": "After School Africa",
-   "found": 0,
-   "note": "nothing listed"
+   "note": "20 listed · 6 skipped (closed, no date, or outside the field)"
   },
   {
    "name": "EasyChair CFPs – international relations",
@@ -130,38 +100,38 @@
   },
   {
    "name": "WikiCFP – international relations",
-   "found": 13,
+   "found": 20,
    "note": ""
   },
   {
    "name": "WikiCFP – security",
    "found": 6,
-   "note": ""
+   "note": "8 listed · 2 skipped (closed, no date, or outside the field)"
   },
   {
    "name": "H-Net H-Announce (CfPs, events, fellowships)",
-   "found": 0,
-   "note": "HTTP Error 302: The HTTP server returned a redirect error that would lead to an infinite loop.\nThe last 30x error message was:\nFound"
+   "found": 9,
+   "note": "10 listed · 1 skipped (closed, no date, or outside the field)"
   },
   {
    "name": "Brookings events",
    "found": 10,
-   "note": ""
+   "note": "15 listed · 5 skipped (closed, no date, or outside the field)"
   },
   {
    "name": "Atlantic Council events",
    "found": 4,
-   "note": ""
+   "note": "7 listed · 3 skipped (closed, no date, or outside the field)"
   },
   {
    "name": "CSIS events",
-   "found": 9,
-   "note": ""
+   "found": 8,
+   "note": "15 listed · 7 skipped (closed, no date, or outside the field)"
   },
   {
    "name": "Wilson Center events",
    "found": 0,
-   "note": ""
+   "note": "1 listed · 1 skipped (closed, no date, or outside the field)"
   },
   {
    "name": "Carnegie Endowment events (Washington, Europe, China, India, Middle East)",
@@ -170,28 +140,28 @@
   },
   {
    "name": "Stimson Center events",
-   "found": 0,
-   "note": "HTTP Error 403: Forbidden"
+   "found": 2,
+   "note": "10 listed · 8 skipped (closed, no date, or outside the field)"
   },
   {
    "name": "Middle East Institute events",
    "found": 0,
-   "note": "nothing listed"
+   "note": "page read, but no items recognised"
   },
   {
    "name": "Arab Center Washington DC events",
-   "found": 0,
-   "note": ""
+   "found": 1,
+   "note": "6 listed · 5 skipped (closed, no date, or outside the field)"
   },
   {
    "name": "Inter-American Dialogue events",
    "found": 0,
-   "note": "nothing listed"
+   "note": "page read, but no items recognised"
   },
   {
    "name": "CIGI events (Canada)",
-   "found": 0,
-   "note": "HTTP Error 403: Forbidden"
+   "found": 3,
+   "note": ""
   },
   {
    "name": "Chatham House events",
@@ -204,24 +174,19 @@
    "note": "HTTP Error 403: Forbidden"
   },
   {
-   "name": "SIPRI events",
-   "found": 0,
-   "note": "HTTP Error 404: Not Found"
-  },
-  {
    "name": "ECFR events",
    "found": 1,
-   "note": ""
+   "note": "11 listed · 10 skipped (closed, no date, or outside the field)"
   },
   {
    "name": "EUISS events",
    "found": 0,
-   "note": "HTTP Error 404: Not Found"
+   "note": "10 listed · 10 skipped (closed, no date, or outside the field)"
   },
   {
    "name": "Egmont Institute events",
    "found": 0,
-   "note": "nothing listed"
+   "note": "page read, but no items recognised"
   },
   {
    "name": "Clingendael events",
@@ -236,17 +201,17 @@
   {
    "name": "PRIO events",
    "found": 2,
-   "note": ""
+   "note": "10 listed · 8 skipped (closed, no date, or outside the field)"
   },
   {
    "name": "RSIS events (Singapore)",
    "found": 0,
-   "note": "HTTP Error 403: Forbidden"
+   "note": "page read, but no items recognised"
   },
   {
    "name": "ISEAS – Yusof Ishak Institute events",
    "found": 0,
-   "note": "nothing listed"
+   "note": "page read, but no items recognised"
   },
   {
    "name": "NUS Asia Research Institute events",
@@ -254,75 +219,80 @@
    "note": ""
   },
   {
-   "name": "NUS Institute of South Asian Studies events",
-   "found": 0,
-   "note": "HTTP Error 404: Not Found"
-  },
-  {
    "name": "Lowy Institute events (Australia)",
    "found": 0,
-   "note": "nothing listed"
+   "note": "page read, but no items recognised"
   },
   {
    "name": "Observer Research Foundation events (India)",
    "found": 0,
-   "note": "nothing listed"
+   "note": "page read, but no items recognised"
   },
   {
    "name": "Tsinghua CISS events (Beijing)",
    "found": 0,
-   "note": ""
+   "note": "12 listed · 12 skipped (closed, no date, or outside the field)"
   },
   {
    "name": "Fudan Development Institute (Shanghai)",
    "found": 0,
-   "note": ""
+   "note": "<urlopen error _ssl.c:994: The handshake operation timed out>"
   },
   {
    "name": "Center for China and Globalization (CCG)",
-   "found": 0,
-   "note": "HTTP Error 302: The HTTP server returned a redirect error that would lead to an infinite loop.\nThe last 30x error message was:\nFound"
+   "found": 1,
+   "note": "12 listed · 11 skipped (closed, no date, or outside the field)"
   },
   {
    "name": "Arab Reform Initiative events",
    "found": 0,
-   "note": "HTTP Error 404: Not Found"
+   "note": "10 listed · 10 skipped (closed, no date, or outside the field) · pattern did not match; used nearby links"
   },
   {
    "name": "Middle East Council on Global Affairs events (Doha)",
    "found": 0,
-   "note": "nothing listed"
+   "note": "page read, but no items recognised"
   },
   {
    "name": "ISS Africa events",
    "found": 4,
-   "note": ""
+   "note": "7 listed · 3 skipped (closed, no date, or outside the field)"
   },
   {
    "name": "SAIIA events (South Africa)",
-   "found": 2,
-   "note": ""
+   "found": 3,
+   "note": "10 listed · 7 skipped (closed, no date, or outside the field)"
   },
   {
    "name": "UNIDIR events",
    "found": 8,
-   "note": ""
+   "note": "10 listed · 2 skipped (closed, no date, or outside the field)"
   },
   {
    "name": "United Nations University events",
-   "found": 7,
+   "found": 8,
+   "note": "10 listed · 2 skipped (closed, no date, or outside the field)"
+  },
+  {
+   "name": "CODESRIA (African social science calls, institutes, grants)",
+   "found": 0,
+   "note": "page read, but no items recognised"
+  },
+  {
+   "name": "EURAXESS – PhD social sciences",
+   "found": 10,
    "note": ""
   }
  ],
  "byRegion": {
-  "Online / global": 41,
-  "Sub-Saharan Africa": 31,
-  "Europe": 160,
-  "Americas": 83,
+  "Online / global": 43,
+  "Sub-Saharan Africa": 32,
+  "Europe": 162,
+  "Americas": 95,
   "Middle East & North Africa": 9,
   "Russia & Central Asia": 3,
-  "China & East Asia": 20,
-  "South & Southeast Asia": 26,
+  "China & East Asia": 21,
+  "South & Southeast Asia": 27,
   "Unassigned": 27
  },
  "method": "keyword rules"
