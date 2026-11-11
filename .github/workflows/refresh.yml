@@ -1,0 +1,86 @@
+name: Collect and publish
+
+on:
+  schedule:
+    - cron: "31 6 * * *"   # every day at 06:31 UTC
+  workflow_dispatch:
+    inputs:
+      only:
+        description: "Optional: run only sources whose name contains this text"
+        required: false
+        default: ""
+      skip_refresh:
+        description: "Only republish the site, no search"
+        type: boolean
+        default: false
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+  models: read
+
+concurrency:
+  group: refresh-and-publish
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Search and update listings
+        if: github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && github.event.inputs.skip_refresh != 'true')
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          USE_AI: ${{ vars.USE_AI }}
+          GH_MODEL: ${{ vars.GH_MODEL }}
+          RELIEFWEB_APPNAME: ${{ vars.RELIEFWEB_APPNAME }}
+          ONLY: ${{ github.event.inputs.only }}
+        run: |
+          if [ -n "$ONLY" ]; then python scripts/collect.py --only "$ONLY"; else python scripts/collect.py; fi
+
+      - name: Merge hand-added items (data/manual.json)
+        if: github.event_name == 'push'
+        run: python scripts/collect.py --manual-only
+
+      - name: Commit updated data
+        run: |
+          git config user.name  "opportunities-hub-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/positions.json data/meta.json
+          if git diff --cached --quiet; then
+            echo "No data changes"
+          else
+            git commit -m "Refresh listings $(date -u +%Y-%m-%d) [skip ci]"
+            git push
+          fi
+
+      - name: Prepare site
+        run: |
+          touch .nojekyll
+          mkdir -p _site
+          cp -r index.html manifest.webmanifest sw.js .nojekyll icons data sources _site/
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: refresh
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
