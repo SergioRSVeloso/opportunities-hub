@@ -1,0 +1,21 @@
+Name,Acronym,Group,Location,Careers / vacancy page,Opportunity types,Where vacancies are posted,PolSci/IR relevance
+EU Careers (EPSO),EPSO,Central EU job board,—,https://eu-careers.europa.eu/en,"All EU institution competitions, CAST, temp & contract posts",Primary feed for all EU institutions,High
+EU Agencies Network job board,EUAN,Central EU agencies board,—,https://agencies-network.europa.eu/job-opportunities-eu-agencies-and-jus_en,All agency & JU vacancies and traineeships,Has RSS,High
+Commission Blue Book traineeships,,EU traineeship portal,—,https://traineeships.ec.europa.eu/,"5-month paid traineeships (Commission, EEAS, some agencies); 2 calls/year",Own site,High
+European Parliament traineeships,,EU traineeship portal,—,https://ep-stages.gestmax.eu/,Schuman traineeships,Own site,High
+EEAS junior professionals in delegations,JPD,EU programme,—,https://www.eeas.europa.eu/eeas/vacancies_en,Junior professionals & trainees in EU Delegations,EEAS vacancies,High
+UN Careers,,Central UN board,—,https://careers.un.org/,"Secretariat jobs, YPP, internships",Own site (has search filters / job alerts),High
+UN Young Professionals Programme,YPP,UN programme,—,https://careers.un.org/,Entry-level exam-based recruitment (nationality-dependent),UN Careers,High
+UN Volunteers,UNV,UN programme,—,https://app.unv.org/,International/national/online volunteer assignments,Own site,High
+UNjobs,,Unofficial UN-system aggregator,—,https://unjobs.org/,Vacancies from most UN and international organisations,Aggregator (check terms before scraping),High
+UN Talent / Impactpool,,Aggregator,—,https://www.impactpool.org/,"UN, IO and NGO jobs",Aggregator (check terms),Medium
+EURAXESS,,EU research jobs portal (Commission),—,https://euraxess.ec.europa.eu/jobs/search,"PhD, postdoc, research jobs and fellowships across Europe; filter by research field 'Political sciences'",Primary feed for university PhD posts,High
+Marie Skłodowska-Curie Actions,MSCA,EU funding programme,—,https://marie-sklodowska-curie-actions.ec.europa.eu/,"Doctoral Networks (PhD posts listed on EURAXESS), Postdoctoral Fellowships",MSCA site + EURAXESS,High
+AcademicTransfer,,Dutch academic jobs board,NL,https://www.academictransfer.com/en/,Almost all Dutch PhD/postdoc vacancies,Aggregator,High
+Academic Positions,,European academic jobs board,—,https://academicpositions.com/,"PhD, postdoc and faculty posts",Aggregator (check terms),High
+FindAPhD,,PhD aggregator,—,https://www.findaphd.com/,PhD projects & programmes,Aggregator (check terms),Medium
+ECPR Jobs,ECPR,Political science association board,—,https://ecpr.eu/,"Political science jobs, PhD & postdoc calls across Europe",ECPR site,High
+H-Net Job Guide,,Humanities & social sciences board,—,https://www.h-net.org/jobs/,Academic posts incl. IR / political science,Aggregator,Medium
+DAAD scholarship database,DAAD,German scholarship portal,DE,https://www.daad.de/en/study-and-research-in-germany/scholarships/,PhD & research scholarships in Germany,Own site,Medium
+FCT – Foundation for Science and Technology,FCT,Portuguese research funder,PT,https://www.fct.pt/en/,Annual PhD studentship & researcher calls,Own site,Medium
+Jean Monnet Actions (Erasmus+),,EU funding programme,—,https://erasmus-plus.ec.europa.eu/,Jean Monnet chairs/modules/networks (EU studies),Erasmus+ site,Medium
