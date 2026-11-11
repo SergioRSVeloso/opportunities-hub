@@ -1,6 +1,329 @@
 {
- "lastRefreshed": "2026-11-11T17:00:00Z",
- "summary": "Initial export: 175 open items",
- "total": 175,
- "sources": []
+ "lastRefreshed": "2026-11-11T20:57:29Z",
+ "summary": "225 added, 0 updated, 0 closed or delisted removed; 400 open",
+ "total": 400,
+ "sources": [
+  {
+   "name": "jobs.ac.uk – Politics & Government",
+   "found": 0,
+   "note": "HTTP Error 500: Internal Server Error"
+  },
+  {
+   "name": "Times Higher Education jobs – Politics & International Studies",
+   "found": 20,
+   "note": ""
+  },
+  {
+   "name": "HigherEdJobs – Political Science (USA)",
+   "found": 25,
+   "note": ""
+  },
+  {
+   "name": "EURAXESS – international relations",
+   "found": 10,
+   "note": ""
+  },
+  {
+   "name": "EURAXESS – political science",
+   "found": 0,
+   "note": ""
+  },
+  {
+   "name": "EURAXESS – security & conflict",
+   "found": 0,
+   "note": ""
+  },
+  {
+   "name": "EURAXESS – Middle East & Islamic studies",
+   "found": 0,
+   "note": ""
+  },
+  {
+   "name": "EURAXESS – China & Asia",
+   "found": 0,
+   "note": ""
+  },
+  {
+   "name": "EURAXESS – migration",
+   "found": 0,
+   "note": ""
+  },
+  {
+   "name": "EURAXESS – MSCA doctoral networks (social sciences)",
+   "found": 0,
+   "note": ""
+  },
+  {
+   "name": "FindAPhD – politics & international relations (worldwide)",
+   "found": 0,
+   "note": "HTTP Error 403: Forbidden"
+  },
+  {
+   "name": "FindAPhD – international relations",
+   "found": 0,
+   "note": "HTTP Error 403: Forbidden"
+  },
+  {
+   "name": "UNjobs – political affairs",
+   "found": 0,
+   "note": "nothing listed"
+  },
+  {
+   "name": "UNjobs – peace & security",
+   "found": 0,
+   "note": "nothing listed"
+  },
+  {
+   "name": "UNjobs – human rights",
+   "found": 12,
+   "note": ""
+  },
+  {
+   "name": "UNjobs – internships",
+   "found": 8,
+   "note": ""
+  },
+  {
+   "name": "ReliefWeb – political affairs, peace & governance jobs",
+   "found": 0,
+   "note": "skipped: set the RELIEFWEB_APPNAME variable to enable"
+  },
+  {
+   "name": "Opportunity Desk (worldwide scholarships, fellowships, conferences)",
+   "found": 18,
+   "note": ""
+  },
+  {
+   "name": "Scholars4Dev (scholarships for international students)",
+   "found": 16,
+   "note": ""
+  },
+  {
+   "name": "Scholarship Positions (worldwide)",
+   "found": 0,
+   "note": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'cloudflare.vc'. (_ssl.c:1011)>"
+  },
+  {
+   "name": "Opportunities for Africans",
+   "found": 14,
+   "note": ""
+  },
+  {
+   "name": "After School Africa",
+   "found": 0,
+   "note": "nothing listed"
+  },
+  {
+   "name": "EasyChair CFPs – international relations",
+   "found": 0,
+   "note": "HTTP Error 404: Not Found"
+  },
+  {
+   "name": "EasyChair CFPs – political science",
+   "found": 0,
+   "note": "HTTP Error 404: Not Found"
+  },
+  {
+   "name": "WikiCFP – political science",
+   "found": 20,
+   "note": ""
+  },
+  {
+   "name": "WikiCFP – international relations",
+   "found": 13,
+   "note": ""
+  },
+  {
+   "name": "WikiCFP – security",
+   "found": 6,
+   "note": ""
+  },
+  {
+   "name": "H-Net H-Announce (CfPs, events, fellowships)",
+   "found": 0,
+   "note": "HTTP Error 302: The HTTP server returned a redirect error that would lead to an infinite loop.\nThe last 30x error message was:\nFound"
+  },
+  {
+   "name": "Brookings events",
+   "found": 10,
+   "note": ""
+  },
+  {
+   "name": "Atlantic Council events",
+   "found": 4,
+   "note": ""
+  },
+  {
+   "name": "CSIS events",
+   "found": 9,
+   "note": ""
+  },
+  {
+   "name": "Wilson Center events",
+   "found": 0,
+   "note": ""
+  },
+  {
+   "name": "Carnegie Endowment events (Washington, Europe, China, India, Middle East)",
+   "found": 3,
+   "note": ""
+  },
+  {
+   "name": "Stimson Center events",
+   "found": 0,
+   "note": "HTTP Error 403: Forbidden"
+  },
+  {
+   "name": "Middle East Institute events",
+   "found": 0,
+   "note": "nothing listed"
+  },
+  {
+   "name": "Arab Center Washington DC events",
+   "found": 0,
+   "note": ""
+  },
+  {
+   "name": "Inter-American Dialogue events",
+   "found": 0,
+   "note": "nothing listed"
+  },
+  {
+   "name": "CIGI events (Canada)",
+   "found": 0,
+   "note": "HTTP Error 403: Forbidden"
+  },
+  {
+   "name": "Chatham House events",
+   "found": 0,
+   "note": "HTTP Error 403: Forbidden"
+  },
+  {
+   "name": "IISS events",
+   "found": 0,
+   "note": "HTTP Error 403: Forbidden"
+  },
+  {
+   "name": "SIPRI events",
+   "found": 0,
+   "note": "HTTP Error 404: Not Found"
+  },
+  {
+   "name": "ECFR events",
+   "found": 1,
+   "note": ""
+  },
+  {
+   "name": "EUISS events",
+   "found": 0,
+   "note": "HTTP Error 404: Not Found"
+  },
+  {
+   "name": "Egmont Institute events",
+   "found": 0,
+   "note": "nothing listed"
+  },
+  {
+   "name": "Clingendael events",
+   "found": 0,
+   "note": "HTTP Error 403: Forbidden"
+  },
+  {
+   "name": "Geneva Graduate Institute events",
+   "found": 11,
+   "note": ""
+  },
+  {
+   "name": "PRIO events",
+   "found": 2,
+   "note": ""
+  },
+  {
+   "name": "RSIS events (Singapore)",
+   "found": 0,
+   "note": "HTTP Error 403: Forbidden"
+  },
+  {
+   "name": "ISEAS – Yusof Ishak Institute events",
+   "found": 0,
+   "note": "nothing listed"
+  },
+  {
+   "name": "NUS Asia Research Institute events",
+   "found": 11,
+   "note": ""
+  },
+  {
+   "name": "NUS Institute of South Asian Studies events",
+   "found": 0,
+   "note": "HTTP Error 404: Not Found"
+  },
+  {
+   "name": "Lowy Institute events (Australia)",
+   "found": 0,
+   "note": "nothing listed"
+  },
+  {
+   "name": "Observer Research Foundation events (India)",
+   "found": 0,
+   "note": "nothing listed"
+  },
+  {
+   "name": "Tsinghua CISS events (Beijing)",
+   "found": 0,
+   "note": ""
+  },
+  {
+   "name": "Fudan Development Institute (Shanghai)",
+   "found": 0,
+   "note": ""
+  },
+  {
+   "name": "Center for China and Globalization (CCG)",
+   "found": 0,
+   "note": "HTTP Error 302: The HTTP server returned a redirect error that would lead to an infinite loop.\nThe last 30x error message was:\nFound"
+  },
+  {
+   "name": "Arab Reform Initiative events",
+   "found": 0,
+   "note": "HTTP Error 404: Not Found"
+  },
+  {
+   "name": "Middle East Council on Global Affairs events (Doha)",
+   "found": 0,
+   "note": "nothing listed"
+  },
+  {
+   "name": "ISS Africa events",
+   "found": 4,
+   "note": ""
+  },
+  {
+   "name": "SAIIA events (South Africa)",
+   "found": 2,
+   "note": ""
+  },
+  {
+   "name": "UNIDIR events",
+   "found": 8,
+   "note": ""
+  },
+  {
+   "name": "United Nations University events",
+   "found": 7,
+   "note": ""
+  }
+ ],
+ "byRegion": {
+  "Online / global": 41,
+  "Sub-Saharan Africa": 31,
+  "Europe": 160,
+  "Americas": 83,
+  "Middle East & North Africa": 9,
+  "Russia & Central Asia": 3,
+  "China & East Asia": 20,
+  "South & Southeast Asia": 26,
+  "Unassigned": 27
+ },
+ "method": "keyword rules"
 }
