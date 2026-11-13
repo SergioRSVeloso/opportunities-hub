@@ -1,7 +1,7 @@
 {
- "lastRefreshed": "2026-11-12T07:48:42Z",
- "summary": "49 added, 215 updated, 0 closed or delisted removed; 468 open",
- "total": 468,
+ "lastRefreshed": "2026-11-13T07:47:44Z",
+ "summary": "76 added, 159 updated, 0 closed or delisted removed; 544 open",
+ "total": 544,
  "sources": [
   {
    "name": "jobs.ac.uk – Politics & Government",
@@ -70,18 +70,18 @@
   },
   {
    "name": "Opportunity Desk (worldwide scholarships, fellowships, conferences)",
-   "found": 18,
-   "note": "30 listed · 12 skipped (closed, no date, or outside the field)"
+   "found": 13,
+   "note": "30 listed · 17 skipped (closed, no date, or outside the field)"
   },
   {
    "name": "Scholars4Dev (scholarships for international students)",
-   "found": 16,
-   "note": "20 listed · 4 skipped (closed, no date, or outside the field)"
+   "found": 10,
+   "note": "20 listed · 10 skipped (closed, no date, or outside the field)"
   },
   {
    "name": "Opportunities for Africans",
-   "found": 14,
-   "note": "20 listed · 6 skipped (closed, no date, or outside the field)"
+   "found": 15,
+   "note": "20 listed · 5 skipped (closed, no date, or outside the field)"
   },
   {
    "name": "EasyChair CFPs – international relations",
@@ -110,13 +110,13 @@
   },
   {
    "name": "H-Net H-Announce (CfPs, events, fellowships)",
-   "found": 9,
-   "note": "10 listed · 1 skipped (closed, no date, or outside the field)"
+   "found": 5,
+   "note": "10 listed · 5 skipped (closed, no date, or outside the field)"
   },
   {
    "name": "Brookings events",
-   "found": 10,
-   "note": "15 listed · 5 skipped (closed, no date, or outside the field)"
+   "found": 11,
+   "note": "15 listed · 4 skipped (closed, no date, or outside the field)"
   },
   {
    "name": "Atlantic Council events",
@@ -140,8 +140,8 @@
   },
   {
    "name": "Stimson Center events",
-   "found": 5,
-   "note": "10 listed · 5 skipped (closed, no date, or outside the field)"
+   "found": 0,
+   "note": "HTTP Error 403: Forbidden"
   },
   {
    "name": "Middle East Institute events",
@@ -165,8 +165,8 @@
   },
   {
    "name": "Chatham House events",
-   "found": 12,
-   "note": "15 listed · 3 skipped (closed, no date, or outside the field)"
+   "found": 0,
+   "note": "HTTP Error 403: Forbidden"
   },
   {
    "name": "IISS events",
@@ -176,7 +176,7 @@
   {
    "name": "ECFR events",
    "found": 1,
-   "note": "11 listed · 10 skipped (closed, no date, or outside the field)"
+   "note": "12 listed · 11 skipped (closed, no date, or outside the field)"
   },
   {
    "name": "EUISS events",
@@ -195,7 +195,7 @@
   },
   {
    "name": "Geneva Graduate Institute events",
-   "found": 11,
+   "found": 10,
    "note": ""
   },
   {
@@ -206,7 +206,7 @@
   {
    "name": "RSIS events (Singapore)",
    "found": 0,
-   "note": "page read, but no items recognised"
+   "note": "HTTP Error 403: Forbidden"
   },
   {
    "name": "ISEAS – Yusof Ishak Institute events",
@@ -215,7 +215,7 @@
   },
   {
    "name": "NUS Asia Research Institute events",
-   "found": 11,
+   "found": 12,
    "note": ""
   },
   {
@@ -270,8 +270,8 @@
   },
   {
    "name": "United Nations University events",
-   "found": 9,
-   "note": "10 listed · 1 skipped (closed, no date, or outside the field)"
+   "found": 10,
+   "note": ""
   },
   {
    "name": "CODESRIA (African social science calls, institutes, grants)",
@@ -286,14 +286,14 @@
  ],
  "byRegion": {
   "Online / global": 45,
-  "Sub-Saharan Africa": 32,
-  "Europe": 195,
-  "Americas": 99,
-  "Middle East & North Africa": 11,
+  "Sub-Saharan Africa": 40,
+  "Europe": 218,
+  "Americas": 125,
+  "Middle East & North Africa": 22,
   "Russia & Central Asia": 3,
-  "China & East Asia": 27,
-  "South & Southeast Asia": 29,
-  "Unassigned": 27
+  "China & East Asia": 29,
+  "South & Southeast Asia": 32,
+  "Unassigned": 30
  },
  "method": "keyword rules"
 }
