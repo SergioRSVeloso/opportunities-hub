@@ -1,7 +1,7 @@
 {
- "lastRefreshed": "2026-11-14T07:36:13Z",
- "summary": "55 added, 213 updated, 0 closed or delisted removed; 599 open",
- "total": 599,
+ "lastRefreshed": "2026-11-15T07:38:35Z",
+ "summary": "22 added, 244 updated, 8 closed or delisted removed; 613 open",
+ "total": 613,
  "sources": [
   {
    "name": "jobs.ac.uk – Politics & Government",
@@ -70,8 +70,8 @@
   },
   {
    "name": "Opportunity Desk (worldwide scholarships, fellowships, conferences)",
-   "found": 15,
-   "note": "30 listed · 15 skipped (closed, no date, or outside the field)"
+   "found": 16,
+   "note": "30 listed · 14 skipped (closed, no date, or outside the field)"
   },
   {
    "name": "Scholars4Dev (scholarships for international students)",
@@ -125,8 +125,8 @@
   },
   {
    "name": "CSIS events",
-   "found": 13,
-   "note": "14 listed · 1 skipped (closed, no date, or outside the field)"
+   "found": 11,
+   "note": "12 listed · 1 skipped (closed, no date, or outside the field)"
   },
   {
    "name": "Wilson Center events",
@@ -135,7 +135,7 @@
   },
   {
    "name": "Carnegie Endowment events (Washington, Europe, China, India, Middle East)",
-   "found": 3,
+   "found": 2,
    "note": ""
   },
   {
@@ -285,15 +285,15 @@
   }
  ],
  "byRegion": {
-  "Online / global": 46,
-  "Sub-Saharan Africa": 44,
-  "Europe": 242,
-  "Americas": 144,
+  "Online / global": 43,
+  "Europe": 251,
+  "Americas": 149,
+  "Sub-Saharan Africa": 42,
   "Middle East & North Africa": 23,
   "Russia & Central Asia": 3,
   "China & East Asia": 30,
-  "South & Southeast Asia": 34,
-  "Unassigned": 33
+  "South & Southeast Asia": 35,
+  "Unassigned": 37
  },
  "method": "keyword rules"
 }
