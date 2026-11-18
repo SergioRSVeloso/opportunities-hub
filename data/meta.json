@@ -1,7 +1,7 @@
 {
- "lastRefreshed": "2026-11-17T07:50:20Z",
- "summary": "66 added, 188 updated, 9 closed or delisted removed; 688 open",
- "total": 688,
+ "lastRefreshed": "2026-11-18T07:47:36Z",
+ "summary": "68 added, 188 updated, 1 closed or delisted removed; 755 open",
+ "total": 755,
  "sources": [
   {
    "name": "jobs.ac.uk – Politics & Government",
@@ -10,7 +10,7 @@
   },
   {
    "name": "Times Higher Education jobs – Politics & International Studies",
-   "found": 20,
+   "found": 19,
    "note": ""
   },
   {
@@ -70,8 +70,8 @@
   },
   {
    "name": "Opportunity Desk (worldwide scholarships, fellowships, conferences)",
-   "found": 17,
-   "note": "30 listed · 13 skipped (closed, no date, or outside the field)"
+   "found": 19,
+   "note": "30 listed · 11 skipped (closed, no date, or outside the field)"
   },
   {
    "name": "Scholars4Dev (scholarships for international students)",
@@ -80,8 +80,8 @@
   },
   {
    "name": "Opportunities for Africans",
-   "found": 12,
-   "note": "20 listed · 8 skipped (closed, no date, or outside the field)"
+   "found": 14,
+   "note": "20 listed · 6 skipped (closed, no date, or outside the field)"
   },
   {
    "name": "EasyChair CFPs – international relations",
@@ -110,8 +110,8 @@
   },
   {
    "name": "H-Net H-Announce (CfPs, events, fellowships)",
-   "found": 6,
-   "note": "10 listed · 4 skipped (closed, no date, or outside the field)"
+   "found": 7,
+   "note": "10 listed · 3 skipped (closed, no date, or outside the field)"
   },
   {
    "name": "Brookings events",
@@ -125,7 +125,7 @@
   },
   {
    "name": "CSIS events",
-   "found": 13,
+   "found": 12,
    "note": ""
   },
   {
@@ -136,7 +136,7 @@
   {
    "name": "Carnegie Endowment events (Washington, Europe, China, India, Middle East)",
    "found": 2,
-   "note": "3 listed · 1 skipped (closed, no date, or outside the field)"
+   "note": ""
   },
   {
    "name": "Stimson Center events",
@@ -206,7 +206,7 @@
   {
    "name": "RSIS events (Singapore)",
    "found": 0,
-   "note": "The read operation timed out"
+   "note": "page read, but no items recognised"
   },
   {
    "name": "ISEAS – Yusof Ishak Institute events",
@@ -215,7 +215,7 @@
   },
   {
    "name": "NUS Asia Research Institute events",
-   "found": 11,
+   "found": 10,
    "note": ""
   },
   {
@@ -271,7 +271,7 @@
   {
    "name": "United Nations University events",
    "found": 6,
-   "note": "10 listed · 4 skipped (closed, no date, or outside the field)"
+   "note": "9 listed · 3 skipped (closed, no date, or outside the field)"
   },
   {
    "name": "CODESRIA (African social science calls, institutes, grants)",
@@ -286,14 +286,14 @@
  ],
  "byRegion": {
   "Online / global": 35,
-  "Europe": 285,
-  "Sub-Saharan Africa": 45,
-  "Middle East & North Africa": 34,
+  "Europe": 311,
+  "Sub-Saharan Africa": 55,
+  "Middle East & North Africa": 35,
   "Russia & Central Asia": 3,
-  "Americas": 162,
-  "China & East Asia": 39,
-  "South & Southeast Asia": 41,
-  "Unassigned": 44
+  "Americas": 183,
+  "China & East Asia": 42,
+  "South & Southeast Asia": 45,
+  "Unassigned": 46
  },
  "method": "keyword rules"
 }
