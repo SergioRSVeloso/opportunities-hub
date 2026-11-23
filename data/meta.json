@@ -1,7 +1,7 @@
 {
- "lastRefreshed": "2026-11-22T07:42:53Z",
- "summary": "14 added, 231 updated, 23 closed or delisted removed; 918 open",
- "total": 918,
+ "lastRefreshed": "2026-11-23T08:02:49Z",
+ "summary": "37 added, 220 updated, 43 closed or delisted removed; 912 open",
+ "total": 912,
  "sources": [
   {
    "name": "jobs.ac.uk – Politics & Government",
@@ -25,33 +25,33 @@
   },
   {
    "name": "EURAXESS – political science",
-   "found": 9,
-   "note": "10 listed · 1 already found via another source"
+   "found": 0,
+   "note": "10 listed · 10 already found via another source"
   },
   {
    "name": "EURAXESS – security & conflict",
-   "found": 9,
-   "note": "10 listed · 1 already found via another source"
+   "found": 0,
+   "note": "10 listed · 10 already found via another source"
   },
   {
    "name": "EURAXESS – Middle East & Islamic studies",
-   "found": 9,
-   "note": "10 listed · 1 already found via another source"
+   "found": 0,
+   "note": "10 listed · 10 already found via another source"
   },
   {
    "name": "EURAXESS – China & Asia",
-   "found": 9,
-   "note": "10 listed · 1 already found via another source"
+   "found": 0,
+   "note": "10 listed · 10 already found via another source"
   },
   {
    "name": "EURAXESS – migration",
-   "found": 9,
-   "note": "10 listed · 1 already found via another source"
+   "found": 0,
+   "note": "10 listed · 10 already found via another source"
   },
   {
    "name": "EURAXESS – MSCA doctoral networks (social sciences)",
-   "found": 9,
-   "note": "10 listed · 1 already found via another source"
+   "found": 0,
+   "note": "10 listed · 10 already found via another source"
   },
   {
    "name": "UNjobs – human rights",
@@ -125,8 +125,8 @@
   },
   {
    "name": "CSIS events",
-   "found": 7,
-   "note": "8 listed · 1 skipped (closed, no date, or outside the field)"
+   "found": 5,
+   "note": "9 listed · 4 skipped (closed, no date, or outside the field)"
   },
   {
    "name": "Wilson Center events",
@@ -135,13 +135,13 @@
   },
   {
    "name": "Carnegie Endowment events (Washington, Europe, China, India, Middle East)",
-   "found": 2,
+   "found": 1,
    "note": ""
   },
   {
    "name": "Stimson Center events",
-   "found": 6,
-   "note": "10 listed · 4 skipped (closed, no date, or outside the field)"
+   "found": 5,
+   "note": "10 listed · 5 skipped (closed, no date, or outside the field)"
   },
   {
    "name": "Middle East Institute events",
@@ -160,13 +160,13 @@
   },
   {
    "name": "CIGI events (Canada)",
-   "found": 0,
-   "note": "HTTP Error 403: Forbidden"
+   "found": 3,
+   "note": ""
   },
   {
    "name": "Chatham House events",
-   "found": 0,
-   "note": "HTTP Error 403: Forbidden"
+   "found": 14,
+   "note": "15 listed · 1 skipped (closed, no date, or outside the field)"
   },
   {
    "name": "IISS events",
@@ -206,7 +206,7 @@
   {
    "name": "RSIS events (Singapore)",
    "found": 0,
-   "note": "HTTP Error 403: Forbidden"
+   "note": "page read, but no items recognised"
   },
   {
    "name": "ISEAS – Yusof Ishak Institute events",
@@ -270,8 +270,8 @@
   },
   {
    "name": "United Nations University events",
-   "found": 7,
-   "note": "9 listed · 2 skipped (closed, no date, or outside the field)"
+   "found": 6,
+   "note": "9 listed · 3 skipped (closed, no date, or outside the field)"
   },
   {
    "name": "CODESRIA (African social science calls, institutes, grants)",
@@ -280,20 +280,20 @@
   },
   {
    "name": "EURAXESS – PhD social sciences",
-   "found": 9,
-   "note": "10 listed · 1 already found via another source"
+   "found": 0,
+   "note": "10 listed · 10 already found via another source"
   }
  ],
  "byRegion": {
-  "Europe": 376,
-  "Sub-Saharan Africa": 80,
-  "Middle East & North Africa": 42,
+  "Europe": 391,
+  "Sub-Saharan Africa": 76,
+  "Middle East & North Africa": 45,
   "Russia & Central Asia": 4,
-  "Americas": 227,
-  "China & East Asia": 49,
-  "Unassigned": 59,
-  "Online / global": 32,
-  "South & Southeast Asia": 49
+  "Americas": 211,
+  "China & East Asia": 47,
+  "Unassigned": 57,
+  "Online / global": 31,
+  "South & Southeast Asia": 50
  },
  "method": "keyword rules"
 }
