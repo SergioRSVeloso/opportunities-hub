@@ -1,7 +1,7 @@
 {
- "lastRefreshed": "2026-11-23T08:02:49Z",
- "summary": "37 added, 220 updated, 43 closed or delisted removed; 912 open",
- "total": 912,
+ "lastRefreshed": "2026-11-24T07:53:50Z",
+ "summary": "72 added, 164 updated, 32 closed or delisted removed; 952 open",
+ "total": 952,
  "sources": [
   {
    "name": "jobs.ac.uk – Politics & Government",
@@ -75,13 +75,13 @@
   },
   {
    "name": "Scholars4Dev (scholarships for international students)",
-   "found": 9,
-   "note": "20 listed · 11 skipped (closed, no date, or outside the field)"
+   "found": 8,
+   "note": "20 listed · 12 skipped (closed, no date, or outside the field)"
   },
   {
    "name": "Opportunities for Africans",
-   "found": 17,
-   "note": "20 listed · 3 skipped (closed, no date, or outside the field)"
+   "found": 19,
+   "note": "20 listed · 1 skipped (closed, no date, or outside the field)"
   },
   {
    "name": "EasyChair CFPs – international relations",
@@ -115,8 +115,8 @@
   },
   {
    "name": "Brookings events",
-   "found": 9,
-   "note": "11 listed · 2 skipped (closed, no date, or outside the field)"
+   "found": 7,
+   "note": "11 listed · 4 skipped (closed, no date, or outside the field)"
   },
   {
    "name": "Atlantic Council events",
@@ -126,7 +126,7 @@
   {
    "name": "CSIS events",
    "found": 5,
-   "note": "9 listed · 4 skipped (closed, no date, or outside the field)"
+   "note": "8 listed · 3 skipped (closed, no date, or outside the field)"
   },
   {
    "name": "Wilson Center events",
@@ -140,8 +140,8 @@
   },
   {
    "name": "Stimson Center events",
-   "found": 5,
-   "note": "10 listed · 5 skipped (closed, no date, or outside the field)"
+   "found": 0,
+   "note": "HTTP Error 403: Forbidden"
   },
   {
    "name": "Middle East Institute events",
@@ -165,8 +165,8 @@
   },
   {
    "name": "Chatham House events",
-   "found": 14,
-   "note": "15 listed · 1 skipped (closed, no date, or outside the field)"
+   "found": 0,
+   "note": "HTTP Error 403: Forbidden"
   },
   {
    "name": "IISS events",
@@ -180,8 +180,8 @@
   },
   {
    "name": "EUISS events",
-   "found": 0,
-   "note": "10 listed · 10 skipped (closed, no date, or outside the field)"
+   "found": 1,
+   "note": "10 listed · 9 skipped (closed, no date, or outside the field)"
   },
   {
    "name": "Egmont Institute events",
@@ -195,7 +195,7 @@
   },
   {
    "name": "Geneva Graduate Institute events",
-   "found": 11,
+   "found": 10,
    "note": ""
   },
   {
@@ -206,7 +206,7 @@
   {
    "name": "RSIS events (Singapore)",
    "found": 0,
-   "note": "page read, but no items recognised"
+   "note": "HTTP Error 403: Forbidden"
   },
   {
    "name": "ISEAS – Yusof Ishak Institute events",
@@ -230,8 +230,8 @@
   },
   {
    "name": "Tsinghua CISS events (Beijing)",
-   "found": 0,
-   "note": "12 listed · 12 skipped (closed, no date, or outside the field)"
+   "found": 1,
+   "note": "12 listed · 11 skipped (closed, no date, or outside the field)"
   },
   {
    "name": "Fudan Development Institute (Shanghai)",
@@ -255,13 +255,13 @@
   },
   {
    "name": "ISS Africa events",
-   "found": 4,
-   "note": "7 listed · 3 skipped (closed, no date, or outside the field)"
+   "found": 2,
+   "note": "7 listed · 5 skipped (closed, no date, or outside the field)"
   },
   {
    "name": "SAIIA events (South Africa)",
-   "found": 2,
-   "note": "10 listed · 8 skipped (closed, no date, or outside the field)"
+   "found": 0,
+   "note": "10 listed · 10 skipped (closed, no date, or outside the field)"
   },
   {
    "name": "UNIDIR events",
@@ -270,8 +270,8 @@
   },
   {
    "name": "United Nations University events",
-   "found": 6,
-   "note": "9 listed · 3 skipped (closed, no date, or outside the field)"
+   "found": 8,
+   "note": "9 listed · 1 skipped (closed, no date, or outside the field)"
   },
   {
    "name": "CODESRIA (African social science calls, institutes, grants)",
@@ -285,15 +285,15 @@
   }
  ],
  "byRegion": {
-  "Europe": 391,
-  "Sub-Saharan Africa": 76,
-  "Middle East & North Africa": 45,
+  "Europe": 411,
+  "Sub-Saharan Africa": 82,
+  "Middle East & North Africa": 56,
   "Russia & Central Asia": 4,
-  "Americas": 211,
-  "China & East Asia": 47,
-  "Unassigned": 57,
-  "Online / global": 31,
-  "South & Southeast Asia": 50
+  "Americas": 203,
+  "China & East Asia": 54,
+  "Unassigned": 59,
+  "Online / global": 32,
+  "South & Southeast Asia": 51
  },
  "method": "keyword rules"
 }
