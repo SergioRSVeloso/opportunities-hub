@@ -1,7 +1,7 @@
 {
- "lastRefreshed": "2026-11-27T07:53:12Z",
- "summary": "64 added, 191 updated, 22 closed or delisted removed; 1126 open",
- "total": 1126,
+ "lastRefreshed": "2026-11-28T07:46:45Z",
+ "summary": "27 added, 221 updated, 28 closed or delisted removed; 1125 open",
+ "total": 1125,
  "sources": [
   {
    "name": "jobs.ac.uk – Politics & Government",
@@ -20,8 +20,8 @@
   },
   {
    "name": "EURAXESS – international relations",
-   "found": 10,
-   "note": ""
+   "found": 9,
+   "note": "10 listed · 1 skipped (closed, no date, or outside the field)"
   },
   {
    "name": "EURAXESS – political science",
@@ -60,8 +60,8 @@
   },
   {
    "name": "UNjobs – internships",
-   "found": 8,
-   "note": "9 listed · 1 skipped (closed, no date, or outside the field)"
+   "found": 7,
+   "note": "8 listed · 1 skipped (closed, no date, or outside the field)"
   },
   {
    "name": "ReliefWeb – political affairs, peace & governance jobs",
@@ -70,8 +70,8 @@
   },
   {
    "name": "Opportunity Desk (worldwide scholarships, fellowships, conferences)",
-   "found": 17,
-   "note": "30 listed · 13 skipped (closed, no date, or outside the field)"
+   "found": 15,
+   "note": "30 listed · 15 skipped (closed, no date, or outside the field)"
   },
   {
    "name": "Scholars4Dev (scholarships for international students)",
@@ -80,8 +80,8 @@
   },
   {
    "name": "Opportunities for Africans",
-   "found": 15,
-   "note": "20 listed · 5 skipped (closed, no date, or outside the field)"
+   "found": 17,
+   "note": "20 listed · 3 skipped (closed, no date, or outside the field)"
   },
   {
    "name": "EasyChair CFPs – international relations",
@@ -115,8 +115,8 @@
   },
   {
    "name": "Brookings events",
-   "found": 8,
-   "note": "13 listed · 5 skipped (closed, no date, or outside the field)"
+   "found": 7,
+   "note": "13 listed · 6 skipped (closed, no date, or outside the field)"
   },
   {
    "name": "Atlantic Council events",
@@ -125,8 +125,8 @@
   },
   {
    "name": "CSIS events",
-   "found": 9,
-   "note": ""
+   "found": 6,
+   "note": "9 listed · 3 skipped (closed, no date, or outside the field)"
   },
   {
    "name": "Wilson Center events",
@@ -195,7 +195,7 @@
   },
   {
    "name": "Geneva Graduate Institute events",
-   "found": 11,
+   "found": 10,
    "note": ""
   },
   {
@@ -206,7 +206,7 @@
   {
    "name": "RSIS events (Singapore)",
    "found": 0,
-   "note": "page read, but no items recognised"
+   "note": "HTTP Error 403: Forbidden"
   },
   {
    "name": "ISEAS – Yusof Ishak Institute events",
@@ -215,7 +215,7 @@
   },
   {
    "name": "NUS Asia Research Institute events",
-   "found": 8,
+   "found": 7,
    "note": ""
   },
   {
@@ -245,8 +245,8 @@
   },
   {
    "name": "Arab Reform Initiative events",
-   "found": 0,
-   "note": "1 listed · 1 skipped (closed, no date, or outside the field) · read via the site's feed"
+   "found": 1,
+   "note": ""
   },
   {
    "name": "Middle East Council on Global Affairs events (Doha)",
@@ -285,15 +285,15 @@
   }
  ],
  "byRegion": {
-  "Europe": 473,
-  "Sub-Saharan Africa": 99,
-  "Middle East & North Africa": 62,
-  "Russia & Central Asia": 4,
-  "Americas": 238,
-  "China & East Asia": 76,
+  "Americas": 231,
+  "Europe": 477,
+  "China & East Asia": 77,
+  "Sub-Saharan Africa": 105,
   "Unassigned": 67,
-  "Online / global": 44,
-  "South & Southeast Asia": 63
+  "Online / global": 37,
+  "South & Southeast Asia": 66,
+  "Russia & Central Asia": 3,
+  "Middle East & North Africa": 62
  },
  "method": "keyword rules"
 }
